@@ -1,13 +1,16 @@
 {
 	"name": "njmyers/music-post-types",
 	"description": "Wordpress post types for music sites",
-	"version": "1.0",
+	"version": "master",
 	"license": "MIT",
+	"source": {
+		"url": "https://github.com/njmyers/music-post-types.git",
+		"type": "git"
+	},
 	"authors": [
 		{
 			"name": "Nick Myers",
 			"email": "nickmyers111@gmail.com"
 		}
-	],
-	"minimum-stability": "dev"
+	]
 }
