@@ -8,5 +8,6 @@
 			"name": "Nick Myers",
 			"email": "nickmyers111@gmail.com"
 		}
-	]
+	],
+	"minimum-stability": "dev"
 }
