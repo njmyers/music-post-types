@@ -1,6 +1,10 @@
 {
 	"name": "njmyers/music-post-types",
 	"license": "MIT",
+	"type": "wordpress-plugin",
+	"require": {
+		"composer/installers": "^1.0"
+	},
 	"description": "Wordpress post types for music sites",
 	"source": {
 		"url": "https://github.com/njmyers/music-post-types.git",
