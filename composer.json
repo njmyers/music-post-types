@@ -6,10 +6,6 @@
 		"composer/installers": "^1.0"
 	},
 	"description": "Wordpress post types for music sites",
-	"source": {
-		"url": "https://github.com/njmyers/music-post-types.git",
-		"type": "git"
-	},
 	"authors": [
 		{
 			"name": "Nick Myers",
