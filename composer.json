@@ -1,8 +1,7 @@
 {
 	"name": "njmyers/music-post-types",
-	"description": "Wordpress post types for music sites",
-	"version": "master",
 	"license": "MIT",
+	"description": "Wordpress post types for music sites",
 	"source": {
 		"url": "https://github.com/njmyers/music-post-types.git",
 		"type": "git"
