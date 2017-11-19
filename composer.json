@@ -1,0 +1,12 @@
+{
+	"name": "njmyers/music-post-types",
+	"description": "Wordpress post types for music sites",
+	"version": "1.0",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Nick Myers",
+			"email": "nickmyers111@gmail.com"
+		}
+	]
+}
