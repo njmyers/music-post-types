@@ -19,4 +19,8 @@ The shows endpoint includes custom filtering by dates and by venues so you can b
 /shows?venue=5
 ```
 
+Install this plugin from packagist using composer
+
+`composer install njmyers/music-post-types`
+
 Enjoy!
