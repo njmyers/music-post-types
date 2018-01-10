@@ -170,21 +170,22 @@ function init_shows() {
 };
 
 /*
-	Custom date filtering for before_shows
+	Custom filtering for shows by before_date
  */
 
 add_filter( 'rest_query_vars', function ( $valid_vars ) {
-    return array_merge( $valid_vars, array( 'before_shows', 'meta_query' ) );
+    return array_merge( $valid_vars, array( 'before_date', 'meta_query' ) );
 } );
-add_filter( 'rest_shows_query', function( $args, $request ) {
-    $before_shows   = $request->get_param( 'before_shows' );
 
-    if ( ! empty( $before_shows ) ) {
+add_filter( 'rest_shows_query', function( $args, $request ) {
+    $before_date   = $request->get_param( 'before_date' );
+
+    if ( ! empty( $before_date ) ) {
         $args['meta_query'] = array(
             array(
                 'key'     => 'date',
-                'value'   => $before_shows,
-                'type'    => 'Date',
+                'value'   => $before_date,
+                'type'    => 'DATE',
                 'compare' => '<',
             )
         );      
@@ -193,24 +194,24 @@ add_filter( 'rest_shows_query', function( $args, $request ) {
     return $args;
 }, 10, 2 );
 
-
 /*
-	Custom filtering for after_shows
+	Custom filtering for shows by after_date
  */
 
 add_filter( 'rest_query_vars', function ( $valid_vars ) {
-    return array_merge( $valid_vars, array( 'after_shows', 'meta_query' ) );
+    return array_merge( $valid_vars, array( 'after_date', 'meta_query' ) );
 } );
-add_filter( 'rest_books_query', function( $args, $request ) {
-    $after_shows   = $request->get_param( 'after_shows' );
 
-    if ( ! empty( $after_shows ) ) {
+add_filter( 'rest_shows_query', function( $args, $request ) {
+    $after_date   = $request->get_param( 'after_date' );
+
+    if ( ! empty( $after_date ) ) {
         $args['meta_query'] = array(
             array(
-                'key'     => 'after_shows',
-                'value'   => $after_shows,
-                'type'    => 'Date',
-                'compare' => '<',
+                'key'     => 'date',
+                'value'   => $after_date,
+                'type'    => 'DATE',
+                'compare' => '>',
             )
         );      
     }
@@ -219,13 +220,14 @@ add_filter( 'rest_books_query', function( $args, $request ) {
 }, 10, 2 );
 
 /*
-	Custom date filtering for venues
+	Custom filtering for shows by venue
  */
 
 add_filter( 'rest_query_vars', function ( $valid_vars ) {
     return array_merge( $valid_vars, array( 'venue', 'meta_query' ) );
 } );
-add_filter( 'rest_books_query', function( $args, $request ) {
+
+add_filter( 'rest_shows_query', function( $args, $request ) {
     $venue   = $request->get_param( 'venue' );
 
     if ( ! empty( $venue ) ) {
@@ -240,6 +242,7 @@ add_filter( 'rest_books_query', function( $args, $request ) {
 
     return $args;
 }, 10, 2 );
+
 
 
 ?>
