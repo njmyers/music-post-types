@@ -21,6 +21,6 @@ The shows endpoint includes custom filtering by dates and by venues so you can b
 
 Install this plugin from packagist using composer
 
-`composer install njmyers/music-post-types`
+`composer require njmyers/music-post-types`
 
 Enjoy!
