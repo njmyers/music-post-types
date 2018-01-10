@@ -5,7 +5,7 @@
 Plugin Name: Musician Post Types
 Plugin URI: http://github.com:njmyers/musician-post-types
 Description: Post Types for cataloging music posts
-Version: 1.0
+Version: 1.1
 Author: Nick Myers
 
  */
