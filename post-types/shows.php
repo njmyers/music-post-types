@@ -145,6 +145,21 @@ function init_shows() {
 				'display_format' => 'g:i a',
 				'return_format' => 'g:i a',
 			),
+			array(
+				'key' => 'field_5a0c274523af5',
+				'label' => 'Notes',
+				'name' => 'notes',
+				'type' => 'textarea',
+				'value' => NULL,
+				'instructions' => 'For formatting and styling use markdown. All HTML will be stripped',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array (
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),				
+			)
 		),
 		'location' => array (
 			array (
