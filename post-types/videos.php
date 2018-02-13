@@ -123,6 +123,21 @@ function init_videos() {
 				'maxlength' => '',
 			),
 			array(
+				'key' => 'field_5a061b40a0125', ),
+				'label' => 'Video Screenshot',
+				'name' => 'video_screenshot',
+				'type' => 'image',
+				'instructions' => 'upload .jpg or .png',
+				'required' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'mime_types' => 'jpg,png',
+				'return_format' => 'array',
+			),				
+			array(
 				'key' => 'field_5a061b1390125',
 				'label' => 'Video Format',
 				'name' => 'video_format',
