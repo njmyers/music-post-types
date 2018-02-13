@@ -123,7 +123,7 @@ function init_videos() {
 				'maxlength' => '',
 			),
 			array(
-				'key' => 'field_5a061b40a0125', ),
+				'key' => 'field_5a061b40a0125',
 				'label' => 'Video Screenshot',
 				'name' => 'video_screenshot',
 				'type' => 'image',
