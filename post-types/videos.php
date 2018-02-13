@@ -85,6 +85,21 @@ function init_videos() {
 				'maxlength' => '',
 			),
 			array(
+				'key' => 'field_5a0abc3d2a709',
+				'label' => 'Order',
+				'name' => 'order',
+				'type' => 'number',
+				'instructions' => '0 is first',
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'min' => '0',
+				'placeholder' => '0',				
+				'step' => '1',
+			),
+			array(
 				'key' => 'field_5a0618202a709',
 				'label' => 'TV Network',
 				'name' => 'tv_network',
